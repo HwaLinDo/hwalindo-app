@@ -1,10 +1,31 @@
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EAST HwaLin Do Academy</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="splash">
+    <h1>Tradição no espírito.<br>Evolução no caminho.</h1>
+  </div>
 
-  const email = document.getElementById("email").value;
-  const codigo = document.getElementById("codigo").value;
+  <div class="login">
+    <h2>Login do Aluno</h2>
+    <form>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="text" id="codigo" placeholder="ID do Aluno" required><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
 
-  // Redireciona diretamente para o Apps Script com os parâmetros
-  const redirectURL = `https://script.google.com/macros/s/AKfycbws25WvmpohT_LQIygufVFLiBO184Wtpar5IIQkYwUtt0cEOKkDxSEhjHT_PpEKEv2_lw/exec?email=${email}&codigo=${codigo}`;
-  window.open(redirectURL, "_blank"); // Abre numa nova aba (evita bloqueio do GitHub Pages)
-});
+  <audio autoplay loop>
+    <source src="assets/som.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ⚠️ Certifica-te que este ficheiro está no diretório principal -->
+  <script src="script.js"></script>
+</body>
+</html>
