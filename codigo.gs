@@ -1,5 +1,5 @@
-const apiKey = "TUA_API_KEY";
-const baseId = "TEU_BASE_ID";
+const apiKey = "patRX681bcooeY82A.9ae4da138cf63effef497eb77d2b044a0077a2c68adf9c2be746e6aab354322b";
+const baseId = "appRdT6BS8uYmIRpJ";
 
 function doGet(e) {
   const email = e.parameter.email;
