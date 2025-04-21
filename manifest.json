@@ -5,9 +5,11 @@
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#bfa265",
-  "icons": [{
-    "src": "assets/icon.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "/hwalindo-app/assets/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
