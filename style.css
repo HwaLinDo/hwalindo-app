@@ -1,0 +1,21 @@
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.splash {
+    padding-top: 100px;
+    font-size: 1.8em;
+    color: goldenrod;
+}
+.login {
+    margin-top: 50px;
+}
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
