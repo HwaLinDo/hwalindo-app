@@ -1,31 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EAST HwaLin Do Academy</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="splash">
-    <h1>Tradição no espírito.<br>Evolução no caminho.</h1>
-  </div>
+// Adiciona o evento ao formulário
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Evita que a página recarregue
 
-  <div class="login">
-    <h2>Login do Aluno</h2>
-    <form>
-      <input type="email" id="email" placeholder="Email" required><br>
-      <input type="text" id="codigo" placeholder="ID do Aluno" required><br>
-      <button type="submit">Entrar</button>
-    </form>
-  </div>
+  // Recolhe os dados inseridos no formulário
+  const email = document.getElementById("email").value;
+  const codigo = document.getElementById("codigo").value;
 
-  <audio autoplay loop>
-    <source src="assets/som.mp3" type="audio/mpeg">
-  </audio>
+  // URL do teu Google Apps Script publicado como Web App
+  const redirectURL = `https://script.google.com/macros/s/AKfycbws25WvmpohT_LQIygufVFLiBO184Wtpar5IIQkYwUtt0cEOKkDxSEhjHT_PpEKEv2_lw/exec?email=${encodeURIComponent(email)}&codigo=${encodeURIComponent(codigo)}`;
 
-  <!-- ⚠️ Certifica-te que este ficheiro está no diretório principal -->
-  <script src="script.js"></script>
-</body>
-</html>
+  // Abre os dados numa nova aba para contornar restrições do GitHub Pages
+  window.open(redirectURL, "_blank");
+});
