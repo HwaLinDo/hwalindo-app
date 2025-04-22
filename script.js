@@ -13,7 +13,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   console.log("Login submetido:", email, codigo);
 
   // URL do Apps Script
-  const redirectURL = `https://script.google.com/macros/s/AKfycbwX86MECGQdYLx8KF0TIRpoRYaKqLoBz3uzN1jSlZAtkfAkwwREA_Ee5X2swjcPwI9u/exec?email=${encodeURIComponent(email)}&codigo=${encodeURIComponent(codigo)}`;
+  const redirectURL = `https://script.google.com/macros/s/AKfycbzBNmDTc3Aqy6RbtiFcXAG7gkKjRhDmQ7ZxJHPoDp-WbFClnMVjtQQtwJvb5_UJfjn-EQ/exec/exec?email=${encodeURIComponent(email)}&codigo=${encodeURIComponent(codigo)}`;
 
   // Abre os dados numa nova aba
   window.open(redirectURL, "_blank");
